@@ -1,18 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-## Introduction
+## Why I used React
 
 For this assignment I chose to use **React**. Beside the fact we use React at WeTransfer, I am *obsessed* with using it, it is like a digital puzzle, creating and fitting pieces together. I enjoy the idea of resuable components, striving for creating components which are so clean and well made, that you can plug them into other projects and they will work. The idea of building out your own resuable components as a swiss army knife across multiple applications excites me!
 
