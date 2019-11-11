@@ -1,0 +1,21 @@
+.ActionButton {
+    position: relative;
+    margin: 20px 10px;
+
+    button {
+        left: 20%;
+        position: absolute;
+        border-radius: 1.25em;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1em;
+        height: 2.5em;
+        outline: 0;
+        font-weight: 500;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 9.75em;
+    }
+}

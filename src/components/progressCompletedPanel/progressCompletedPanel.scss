@@ -1,0 +1,44 @@
+.ProgressCompleted{
+    padding: 0 20px;
+
+    &__Animation{
+        text-align: center;
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    &__Details {
+
+        &__Message{
+            text-align: center;
+
+            h2{
+                font-weight: 500;
+                font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+                color: #17181a;
+                font-size: 1.375em;
+                line-height: 1.2;
+                margin: 0;
+                padding: 0 0.4545454545em;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+                font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            }
+        }
+
+        &__Link{
+            text-align: center;
+            border: 1px solid #babcbf;
+            border-radius: 10px;
+            font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            font-weight: 300;
+        }
+
+    }
+}

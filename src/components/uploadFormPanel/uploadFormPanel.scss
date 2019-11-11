@@ -1,0 +1,58 @@
+.UploadFormPanel {
+
+    &__AddFiles{
+        height: 16.5em;
+
+        svg{
+            display: block;
+            height: 2.25em;
+            margin: 0 0.625em 0 1.25em;
+            position: absolute;
+            top: 7.125em;
+            -webkit-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 2.25em;
+        }
+
+        h2{
+            display: block;
+            font-size: 1.375em;
+            left: 3em;
+            line-height: 1;
+            margin: 0;
+            font-weight: 400;
+            font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            padding: 0;
+            position: absolute;
+            text-align: left;
+            top: 5.4545454545em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+
+    &__Message{
+        height: 100px;
+        margin-top: 0.625em;
+        position: relative;
+
+        textarea{
+            resize: none;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border-width: 1px 0 1px 0;
+            border-color: #babcbf;
+            padding: 15px 20px;
+            font-size: 0.75em;
+            outline: 0;
+        }
+    }
+
+}
