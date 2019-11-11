@@ -14,7 +14,7 @@ You will also see any lint errors in the console.
 
 ## Introduction
 
-For this assignment I chose to use React. Beside the fact we use React at WeTransfer, I am *obsessed* with using it, it is like a digital puzzle, creating and fitting pieces together. I enjoy the idea of resuable components, striving for creating components which are so clean and well made, that you can plug them into other projects and they will work. The idea of building out your own resuable components as a swiss army knife across multiple applications excites me!
+For this assignment I chose to use *React*. Beside the fact we use React at WeTransfer, I am *obsessed* with using it, it is like a digital puzzle, creating and fitting pieces together. I enjoy the idea of resuable components, striving for creating components which are so clean and well made, that you can plug them into other projects and they will work. The idea of building out your own resuable components as a swiss army knife across multiple applications excites me!
 
 ## How to use... or not? 
 
