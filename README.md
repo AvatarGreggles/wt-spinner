@@ -12,11 +12,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-# Why?
+## Introduction
 
 For this assignment I chose to use React. Beside the fact we use React at WeTransfer, I am *obsessed* with using it, it is like a digital puzzle, creating and fitting pieces together. I enjoy the idea of resuable components, striving for creating components which are so clean and well made, that you can plug them into other projects and they will work. The idea of building out your own resuable components as a swiss army knife across multiple applications excites me!
 
-# How to use... or not? 
+## How to use... or not? 
 
 In src/index.js you can pass the following props to the App component which will allow you to customize the color, text and sizing/styling of the components. However, to ensure stability in the case where somebody does not pass in these props, the app is made to work by using default props within the individual components. 
 
@@ -48,7 +48,7 @@ successMessageTitle: "You've done it!",
 successMessageDescription: "You can find your transfer in the link below.",
 downloadLink: "https://we.tl/example"
 
-# How I built the Components
+## How I built the Components
 
 The core components here are the Spinner and the ActionButton components. I wanted to build them into a functioning project so I recreated the flow of transferring your files. 
 
