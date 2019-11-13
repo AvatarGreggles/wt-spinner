@@ -4,11 +4,14 @@ import PropTypes from 'prop-types';
 import './actionButton.scss';
 
 const ActionButton = (props) => {
+    
+    const { colorScheme, handleClick, buttonState } = props;
+
         return (
             //The Button pulls its styling from the colorScheme properties set on the root component
             //The Buttons text is dependent on the current state of buttonState
             <div className="ActionButton">
-                <button style={{background: props.colorScheme}} onClick={props.handleClick}>{props.buttonState}</button>
+                <button style={{background: colorScheme}} onClick={handleClick}>{buttonState}</button>
             </div>
         );
 }

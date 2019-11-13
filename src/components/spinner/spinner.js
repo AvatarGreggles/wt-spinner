@@ -15,7 +15,7 @@ class Spinner extends React.Component{
 
   render(){
 
-      const { radius, stroke, progressPercentage} = this.props;
+      const { radius, stroke, progressPercentage, colorScheme} = this.props;
       const strokeDashoffset = this.circumference - progressPercentage / 100 * this.circumference;
 
       { /* The spinner component has a background and a foreground circle. The foreground uses the strokeDashArray variable which is updated each time the progress increases  */ }
@@ -34,7 +34,7 @@ class Spinner extends React.Component{
                     cy={ radius }
                 />
                 <circle className="Spinner_Foreground"
-                    stroke={this.props.colorScheme}
+                    stroke={ colorScheme }
                     fill="transparent"
                     strokeWidth={ stroke }
                     strokeDasharray={ this.circumference + ' ' + this.circumference }

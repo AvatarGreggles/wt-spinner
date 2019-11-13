@@ -7,6 +7,9 @@ import CompletedGIF from '../../assets/progressCompleted.gif';
 
 { /* Upon the progress reaching 100%, a completion window is shown with an animated GIF and a custom success message */ }
 const ProgressCompletedPanel = (props) => {
+
+    const { successMessageTitle, successMessageDescription, downloadLink } = props;
+
         return (
             <div className="ProgressCompleted">
                 <div className="ProgressCompleted__Animation">
@@ -14,11 +17,11 @@ const ProgressCompletedPanel = (props) => {
                 </div>
                 <div className="ProgressCompleted__Details">
                     <div className="ProgressCompleted__Details__Message">
-                        <h2>{props.successMessageTitle}</h2>
-                        <p>{props.successMessageDescription}</p>
+                        <h2>{successMessageTitle}</h2>
+                        <p>{successMessageDescription}</p>
                     </div>
                     <div className="ProgressCompleted__Details__Link">
-                        <p>{props.downloadLink}</p>
+                        <p>{downloadLink}</p>
                     </div>
                 </div>
             </div>

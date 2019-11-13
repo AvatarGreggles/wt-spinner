@@ -53,6 +53,9 @@ class App extends React.Component {
     }
 
     render(){
+
+        const { currentlyInProgress, progressPercentage, buttonState } = this.state;
+        const { attachFileTitle, colorScheme , defaultMessagePlaceholder, radius, stroke, inProgressTitle, inProgressDescription, successMessageTitle, successMessageDescription, downloadLink } = this.props;
         return (
                 <div className="UploadWindow">
 
@@ -60,38 +63,38 @@ class App extends React.Component {
                         from the initial state, in progress and progress completed */}
 
                     <div className="UploadWindow__UploadSection">
-                        {this.state.currentlyInProgress === false && this.state.progressPercentage !== 100 &&
+                        {currentlyInProgress === false && progressPercentage !== 100 &&
                                 <UploadFormPanel 
-                                attachFileTitle={this.props.attachFileTitle}
-                                colorScheme={this.props.colorScheme}
-                                defaultMessagePlaceholder={this.props.defaultMessagePlaceholder}
+                                attachFileTitle={attachFileTitle}
+                                colorScheme={colorScheme}
+                                defaultMessagePlaceholder={defaultMessagePlaceholder}
                                 />      
                         }
 
-                       {this.state.currentlyInProgress === true &&
+                       {currentlyInProgress === true &&
                                  <InProgressPanel 
-                                radius={ this.props.radius }
-                                stroke={ this.props.stroke }
-                                progressPercentage={ this.state.progressPercentage }
-                                colorScheme={ this.props.colorScheme }
-                                inProgressTitle={this.props.inProgressTitle}
-                                inProgressDescription={this.props.inProgressDescription}
+                                radius={ radius }
+                                stroke={ stroke }
+                                progressPercentage={ progressPercentage }
+                                colorScheme={ colorScheme }
+                                inProgressTitle={ inProgressTitle }
+                                inProgressDescription={ inProgressDescription }
                                 />
                         }
 
-                        {this.state.progressPercentage === 100 &&
+                        {progressPercentage === 100 &&
                                 <ProgressCompletedPanel 
-                                successMessageTitle={this.props.successMessageTitle}
-                                successMessageDescription={this.props.successMessageDescription}
-                                downloadLink={this.props.downloadLink}
+                                successMessageTitle={ successMessageTitle }
+                                successMessageDescription={ successMessageDescription }
+                                downloadLink={ downloadLink }
                                /> 
                         } 
                     </div>
                     <div className="UploadWindow__ButtonSection">
                           <ActionButton 
                             handleClick={this.emulateProgress} 
-                            buttonState={this.state.buttonState}
-                            colorScheme={this.props.colorScheme}
+                            buttonState={buttonState}
+                            colorScheme={colorScheme}
                           />
                     </div> 
                 </div>
