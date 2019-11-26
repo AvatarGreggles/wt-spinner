@@ -9,31 +9,31 @@ const InProgressPanel = (props) => {
 
     const { radius, stroke, progressPercentage, colorScheme, inProgressTitle, inProgressDescription } = props;
 
-        return (
-            <div>
-                <Spinner
-                radius={ radius }
-                stroke={ stroke }
-                progressPercentage={progressPercentage }
-                colorScheme={ colorScheme }
-                />
-                <div className="ProgressPanelInformation">
-                    <p className="ProgressPanelInformation__Title">{inProgressTitle}</p>
-                    <p className="ProgressPanelInformation__Description">{inProgressDescription}</p>  
-                </div>
+    return (
+        <div>
+            <Spinner
+                radius={radius}
+                stroke={stroke}
+                progressPercentage={progressPercentage}
+                colorScheme={colorScheme}
+            />
+            <div className="ProgressPanelInformation">
+                <p className="ProgressPanelInformation__Title">{inProgressTitle}</p>
+                <p className="ProgressPanelInformation__Description">{inProgressDescription}</p>
             </div>
-        );
-    }
+        </div>
+    );
+}
 
 InProgressPanel.propTypes = {
     inProgressTitle: PropTypes.string,
     inProgressDescription: PropTypes.string
-  };
+};
 
-  InProgressPanel.defaultProps = {
+InProgressPanel.defaultProps = {
     inProgressTitle: "Transferring...",
     inProgressDescription: "Your files are being sent, hang in there!"
 
-  };
+};
 
 export default InProgressPanel;
